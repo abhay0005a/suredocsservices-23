@@ -15,15 +15,15 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-background shadow-soft sticky top-0 z-50">
+    <header className="bg-background shadow-soft sticky top-0 z-50" itemScope itemType="https://schema.org/Organization">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logoImage} alt="SureDocs Services" className="h-10 w-10" />
+            <img src={logoImage} alt="SureDocs Services Logo - Professional Document Services in Delhi NCR" className="h-10 w-10" itemProp="logo" />
             <div>
-              <h1 className="text-xl font-bold text-primary">SureDocs Services</h1>
-              <p className="text-xs text-muted-foreground">Trusted Document Solutions</p>
+              <h1 className="text-xl font-bold text-primary" itemProp="name">SureDocs Services</h1>
+              <p className="text-xs text-muted-foreground" itemProp="slogan">Trusted Document Solutions</p>
             </div>
           </div>
 

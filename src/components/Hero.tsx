@@ -24,6 +24,8 @@ const Hero = () => {
         backgroundPosition: 'center',
         backgroundBlendMode: 'overlay'
       }}
+      itemScope 
+      itemType="https://schema.org/LocalBusiness"
     >
       <div className="absolute inset-0 bg-primary/80"></div>
       <div className="container mx-auto px-4 relative z-10">
@@ -32,7 +34,7 @@ const Hero = () => {
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <Shield className="h-16 w-16 text-white mr-4" />
               <div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight" itemProp="name">
                   Get Your Documents
                 </h1>
                 <h2 className="text-3xl md:text-5xl font-bold text-white/90 mt-2">
@@ -41,9 +43,9 @@ const Hero = () => {
               </div>
             </div>
             
-            <p className="text-xl text-white/90 mb-8 max-w-xl mx-auto lg:mx-0">
-              Professional document services for driving licenses, certificates, passports, 
-              and more. Fast, reliable, and completely legal process.
+            <p className="text-xl text-white/90 mb-8 max-w-xl mx-auto lg:mx-0" itemProp="description">
+              Professional document services for driving licenses, birth certificates, passports, 
+              marriage certificates, and property transfers in Delhi NCR. Fast, reliable, and completely legal process.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

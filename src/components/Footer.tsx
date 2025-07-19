@@ -32,21 +32,21 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-foreground text-background" itemScope itemType="https://schema.org/LocalBusiness">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src={logoImage} alt="SureDocs Services" className="h-10 w-10 invert" />
+              <img src={logoImage} alt="SureDocs Services Logo - Document Services Delhi NCR" className="h-10 w-10 invert" itemProp="logo" />
               <div>
-                <h3 className="text-xl font-bold">SureDocs Services</h3>
-                <p className="text-sm opacity-80">Trusted Document Solutions</p>
+                <h3 className="text-xl font-bold" itemProp="name">SureDocs Services</h3>
+                <p className="text-sm opacity-80" itemProp="slogan">Trusted Document Solutions</p>
               </div>
             </div>
-            <p className="text-sm opacity-90 leading-relaxed">
-              Your trusted partner for all official document services. We make paperwork simple, 
-              fast, and completely legal. Get your documents hassle-free with our expert team.
+            <p className="text-sm opacity-90 leading-relaxed" itemProp="description">
+              Your trusted partner for all official document services in Delhi NCR. We make paperwork simple, 
+              fast, and completely legal. Get your documents hassle-free with our expert team specializing in Rohini, Delhi.
             </p>
             <div className="flex items-center space-x-2">
               <Shield className="h-5 w-5 text-green-400" />

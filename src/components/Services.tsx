@@ -70,13 +70,13 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-background" itemScope itemType="https://schema.org/Service">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Our Services</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We provide comprehensive document services to make your life easier. 
-            All processes are completely legal and handled by experienced professionals.
+          <h2 className="text-4xl font-bold text-foreground mb-4" itemProp="name">Our Document Services</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" itemProp="description">
+            We provide comprehensive document services to make your life easier in Delhi NCR. 
+            All processes are completely legal and handled by experienced professionals specializing in government paperwork.
           </p>
         </div>
 
