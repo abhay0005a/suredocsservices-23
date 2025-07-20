@@ -44,8 +44,9 @@ const Hero = () => {
             </div>
             
             <p className="text-xl text-white/90 mb-8 max-w-xl mx-auto lg:mx-0" itemProp="description">
-              Professional document services for driving licenses, birth certificates, passports, 
-              marriage certificates, and property transfers in Delhi NCR. Fast, reliable, and completely legal process.
+              Professional document services including driving licenses, birth certificates, passports, 
+              marriage certificates, property transfers, and comprehensive ITR filing & accounting services in Delhi NCR. 
+              Fast, reliable, and completely legal process.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

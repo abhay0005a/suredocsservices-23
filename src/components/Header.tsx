@@ -23,7 +23,7 @@ const Header = () => {
             <img src={logoImage} alt="SureDocs Services Logo - Professional Document Services in Delhi NCR" className="h-10 w-10" itemProp="logo" />
             <div>
               <h1 className="text-xl font-bold text-primary" itemProp="name">SureDocs Services</h1>
-              <p className="text-xs text-muted-foreground" itemProp="slogan">Trusted Document Solutions</p>
+              <p className="text-xs text-muted-foreground" itemProp="slogan">Documents & ITR Services</p>
             </div>
           </div>
 
@@ -39,7 +39,13 @@ const Header = () => {
               onClick={() => scrollToSection("services")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Services
+              Document Services
+            </button>
+            <button
+              onClick={() => scrollToSection("itr-services")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              ITR & Accounting
             </button>
             <button
               onClick={() => scrollToSection("why-choose-us")}
@@ -93,7 +99,13 @@ const Header = () => {
               onClick={() => scrollToSection("services")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
             >
-              Services
+              Document Services
+            </button>
+            <button
+              onClick={() => scrollToSection("itr-services")}
+              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+            >
+              ITR & Accounting
             </button>
             <button
               onClick={() => scrollToSection("why-choose-us")}
