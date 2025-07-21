@@ -1,0 +1,63 @@
+{
+  "name": "SureDocs - Professional Document Services Delhi NCR",
+  "short_name": "SureDocs",
+  "description": "Get your documents hassle-free in Delhi NCR. Birth certificates, driving licenses, passports, property mutation, ITR filing & more. 100% legal process with 24-48 hour service.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en-IN",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/attached_assets/Screenshot 2025-07-19 155630_1753088749711.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=540&h=720&fit=crop&crop=center&auto=format&q=80",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1024&h=593&fit=crop&crop=center&auto=format&q=80",
+      "sizes": "1024x593", 
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "WhatsApp Contact",
+      "short_name": "WhatsApp",
+      "description": "Contact us directly on WhatsApp",
+      "url": "https://wa.me/919205253438",
+      "icons": [
+        {
+          "src": "/attached_assets/Screenshot 2025-07-19 155630_1753088749711.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Browse our document services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/attached_assets/Screenshot 2025-07-19 155630_1753088749711.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

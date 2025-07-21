@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://suredocs.netlify.app/</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=center&auto=format&q=80</image:loc>
+      <image:caption>SureDocs - Professional Document Services in Delhi NCR</image:caption>
+      <image:title>Document Services Delhi NCR</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://suredocs.netlify.app/services</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&h=630&fit=crop&crop=center&auto=format&q=80</image:loc>
+      <image:caption>Complete Document Services Portfolio</image:caption>
+      <image:title>Birth Certificate, Driving License, Passport Services</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://suredocs.netlify.app/about</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suredocs.netlify.app/contact</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
