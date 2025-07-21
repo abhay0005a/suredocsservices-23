@@ -55,9 +55,9 @@ const Navigation = () => {
               className="flex items-center space-x-3 cursor-pointer"
             >
               <img 
-                src="/attached_assets/Pi7_Tool_Screenshot2025-07-19155630_1753085216252.jpeg" 
+                src="/attached_assets/Screenshot 2025-07-21 134709_1753085835477.png" 
                 alt="SureDocs Logo" 
-                className="h-12 w-auto"
+                className="h-10 w-auto max-w-[180px] object-contain"
                 onError={(e) => {
                   // Fallback to text logo if image fails to load
                   e.currentTarget.style.display = 'none';
@@ -70,7 +70,7 @@ const Navigation = () => {
               <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-xl hidden">
                 SureDocs
               </div>
-              <div className="text-sm text-gray-600 hidden sm:block">Services</div>
+
             </motion.div>
           </Link>
 
