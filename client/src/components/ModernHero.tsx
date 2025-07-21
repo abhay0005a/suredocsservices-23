@@ -11,21 +11,21 @@ const ModernHero = () => {
       title: "Get Your Documents Fast & Legal",
       subtitle: "Professional document services in Delhi NCR",
       highlight: "Same Day Service Available",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=800&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=800&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-blue-600/80 to-blue-800/80"
     },
     {
       title: "Property & Municipal Services",
       subtitle: "Expert handling of all property documentation",
       highlight: "MCD/NDMC Specialists",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=800&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=800&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-green-600/80 to-green-800/80"
     },
     {
       title: "Tax & Business Solutions",
       subtitle: "Complete business setup and tax compliance",
       highlight: "CA Verified Process",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=800&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-purple-600/80 to-purple-800/80"
     }
   ];

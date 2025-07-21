@@ -4,6 +4,7 @@ import ModernHero from "@/components/ModernHero";
 import VisuallyEnhanced from "@/components/VisuallyEnhanced";
 import StickyNotification from "@/components/StickyNotification";
 import FloatingElements from "@/components/FloatingElements";
+import InteractiveContactTriggers from "@/components/InteractiveContactTriggers";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <ScrollToTop />
       <StickyNotification />
       <FloatingElements />
+      <InteractiveContactTriggers />
     </>
   );
 };

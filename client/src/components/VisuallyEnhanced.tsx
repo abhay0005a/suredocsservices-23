@@ -23,7 +23,7 @@ const VisuallyEnhanced = () => {
       description: "Birth certificates, Death certificates, Marriage certificates",
       price: "Starting ₹600",
       time: "2-3 days",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-blue-500 to-blue-600"
     },
     {
@@ -32,7 +32,7 @@ const VisuallyEnhanced = () => {
       description: "Driving license, RC transfer, Vehicle registration",
       price: "Starting ₹800",
       time: "1-2 days",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-green-500 to-green-600"
     },
     {
@@ -41,7 +41,7 @@ const VisuallyEnhanced = () => {
       description: "Property mutation, Registry, Building approvals",
       price: "Starting ₹2000",
       time: "5-7 days",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-purple-500 to-purple-600"
     },
     {
@@ -50,7 +50,7 @@ const VisuallyEnhanced = () => {
       description: "ITR filing, GST registration, Business setup",
       price: "Starting ₹1500",
       time: "1-3 days",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
       gradient: "from-orange-500 to-orange-600"
     }
   ];
@@ -60,19 +60,19 @@ const VisuallyEnhanced = () => {
       icon: Shield,
       title: "100% Legal Process",
       description: "All documents through official channels",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
     },
     {
       icon: Clock,
       title: "Fast Delivery",
       description: "Quick turnaround guaranteed",
-      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      image: "https://images.unsplash.com/photo-1606868306217-dbf5046868d2?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
     },
     {
       icon: Users,
       title: "Expert Team",
       description: "10+ years of experience",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop&crop=center&auto=format&q=80"
     }
   ];
 
