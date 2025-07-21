@@ -21,120 +21,235 @@ const Services = () => {
 
   const categories = [
     { id: "all", name: "All Services", icon: Filter },
-    { id: "govt", name: "Govt Documents", icon: Shield },
-    { id: "certificates", name: "Certificates", icon: FileText },
-    { id: "transfers", name: "Transfers", icon: Home },
-    { id: "legal", name: "Legal Services", icon: Briefcase }
+    { id: "govt", name: "Government Documents", icon: Shield },
+    { id: "municipal", name: "Municipal Services", icon: Home },
+    { id: "legal", name: "Legal & Notary", icon: Briefcase },
+    { id: "tax", name: "Accounting & Tax", icon: Calculator }
   ];
 
   const services = [
     {
-      title: "Driving License",
-      description: "New DL, Renewal, International Permit",
+      title: "Birth & Death Certificates",
+      description: "New registration, old record search (MCD/NDMC), certified copies",
+      icon: FileText,
+      category: "govt",
+      price: "₹600 onwards",
+      faq: [
+        {
+          question: "Can you search old records from MCD/NDMC?",
+          answer: "Yes, we specialize in retrieving old birth/death records from MCD (Municipal Corporation of Delhi) and NDMC archives, even for decades-old records."
+        },
+        {
+          question: "What's the difference between new registration and old record search?",
+          answer: "New registration is for recent births/deaths, while old record search involves finding and obtaining certified copies of historical records from municipal archives."
+        },
+        {
+          question: "How long does the process take?",
+          answer: "New registrations take 7-10 days, while old record searches may take 10-15 days depending on the age of the record."
+        }
+      ]
+    },
+    {
+      title: "Marriage Certificate",
+      description: "Online application, SDM appointment, affidavit preparation",
+      icon: Heart,
+      category: "govt",
+      price: "₹1000 onwards",
+      faq: [
+        {
+          question: "Do you handle SDM appointments?",
+          answer: "Yes, we manage the complete process including online application submission and securing SDM appointments for marriage registration."
+        },
+        {
+          question: "What affidavits are required?",
+          answer: "We prepare all necessary affidavits including age proof, marital status, and address affidavits as required by the registration process."
+        }
+      ]
+    },
+    {
+      title: "Driving License Services",
+      description: "Learner & permanent license, renewal, duplicate, address change",
       icon: Car,
       category: "govt",
       price: "₹800 onwards",
       faq: [
         {
-          question: "What documents are required for a new driving license?",
-          answer: "You'll need proof of age, address proof, passport-size photos, and medical certificate. We'll guide you through the complete list based on your specific case."
+          question: "Do you handle both learner and permanent licenses?",
+          answer: "Yes, we assist with learner license applications and conversion to permanent driving licenses, including all required tests and documentation."
         },
         {
-          question: "How long does the process take?",
-          answer: "Typically 7-15 working days for a new license, 3-7 days for renewal. We handle all paperwork and follow-ups for you."
-        },
-        {
-          question: "Do you provide pickup and delivery?",
-          answer: "Yes, we offer document pickup from your location and delivery of the processed license to your address in Delhi NCR."
+          question: "Can you help with license renewals and duplicates?",
+          answer: "Absolutely! We handle renewals, duplicate licenses, and address changes with minimal hassle and quick processing."
         }
       ]
     },
     {
-      title: "Birth & Death Certificates",
-      description: "Official certificates from municipal records",
-      icon: FileText,
-      category: "certificates",
-      price: "₹600 onwards",
+      title: "Vehicle RC Services",
+      description: "Ownership transfer, duplicate RC, hypothecation removal",
+      icon: Car,
+      category: "govt",
+      price: "₹1200 onwards",
       faq: [
         {
-          question: "Can you get certificates for old records?",
-          answer: "Yes, we can retrieve certificates for records dating back several decades from municipal corporations and registrar offices."
+          question: "How do you handle vehicle ownership transfers?",
+          answer: "We manage the complete transfer process including NOC from previous state, registration transfer, and updating all vehicle documents."
         },
         {
-          question: "What if there are errors in the original record?",
-          answer: "We can help with corrections and amendments through proper legal channels and municipal procedures."
+          question: "What is hypothecation removal?",
+          answer: "When you clear your vehicle loan, we help remove the bank's name from your RC, making you the sole owner of the vehicle."
         }
       ]
     },
     {
       title: "Passport Services",
-      description: "New passport and renewal services",
+      description: "New applications, renewal, correction, document checklist",
       icon: Shield,
       category: "govt",
-      price: "₹1200 onwards",
+      price: "₹1500 onwards",
       faq: [
         {
-          question: "Do you handle police verification?",
-          answer: "Yes, we coordinate with local police stations and can expedite the verification process through proper channels."
+          question: "Do you provide document checklist support?",
+          answer: "Yes, we provide personalized document checklists based on your specific passport requirements and handle the entire application process."
         },
         {
-          question: "What about Tatkal passport services?",
-          answer: "We provide complete Tatkal passport services with faster processing times and premium support."
+          question: "Can you help with passport corrections?",
+          answer: "We assist with all types of passport corrections including name, date of birth, place of birth, and other personal details."
         }
       ]
     },
     {
-      title: "Marriage Certificates",
-      description: "Legal marriage registration and certificates",
-      icon: Heart,
-      category: "certificates",
-      price: "₹1000 onwards",
+      title: "PAN & Aadhaar Services",
+      description: "New PAN, corrections, Aadhaar updates & linking guidance",
+      icon: Shield,
+      category: "govt",
+      price: "₹300 onwards",
       faq: [
         {
-          question: "What's the difference between registration and certificate?",
-          answer: "Marriage registration is the legal process, while the certificate is the official document. We handle both steps completely."
+          question: "Can you help with lost PAN card replacement?",
+          answer: "Yes, we handle PAN card reprint, corrections in name/date of birth, and provide guidance for linking PAN with Aadhaar."
         },
         {
-          question: "Can you handle inter-faith marriages?",
-          answer: "Yes, we process both Hindu Marriage Act and Special Marriage Act registrations based on your requirements."
+          question: "Do you provide Aadhaar update services?",
+          answer: "We provide offline support and guidance for Aadhaar updates, linking services, and resolving common Aadhaar-related issues."
         }
       ]
     },
     {
-      title: "Property Transfer",
-      description: "Registry, mutation, and ownership transfers",
+      title: "Health Trade License (MCD)",
+      description: "New license, renewal, transfer for food & health businesses",
       icon: Home,
-      category: "transfers",
-      price: "₹2500 onwards",
+      category: "municipal",
+      price: "₹2000 onwards",
       faq: [
         {
-          question: "What documents are needed for property transfer?",
-          answer: "Sale deed, property papers, NOCs, tax receipts, and identity proofs. We'll provide a complete checklist based on your property type."
+          question: "What businesses need MCD health trade license?",
+          answer: "Restaurants, food vendors, medical stores, clinics, and any health-related businesses operating in MCD areas require this license."
         },
         {
-          question: "Do you handle stamp duty and registration fees?",
-          answer: "Yes, we calculate exact amounts, handle payments, and ensure all legal requirements are met for the transfer."
+          question: "Can you help with license transfers?",
+          answer: "Yes, we handle complete license transfers when you change business ownership or location within MCD jurisdiction."
         }
       ]
     },
     {
-      title: "ITR & Accounting",
-      description: "Complete tax filing and accounting services",
-      icon: Calculator,
+      title: "Property Mutation & Transfer",
+      description: "DDA/MCD/DJB mutation after sale or death, property tax help",
+      icon: Home,
+      category: "municipal",
+      price: "₹3000 onwards",
+      faq: [
+        {
+          question: "What is property mutation?",
+          answer: "Mutation is updating property ownership records with DDA/MCD/DJB after property sale, inheritance, or transfer."
+        },
+        {
+          question: "Do you help with property tax disputes?",
+          answer: "Yes, we assist with property tax payments, dispute resolution, and ensuring compliance with municipal requirements."
+        }
+      ]
+    },
+    {
+      title: "Building Plan Approval",
+      description: "Plan sanction, regularization (MCD/DDA), construction permits",
+      icon: Home,
+      category: "municipal",
+      price: "₹5000 onwards",
+      faq: [
+        {
+          question: "What is building plan regularization?",
+          answer: "Regularization legalizes unauthorized constructions by obtaining proper approvals from MCD/DDA post-construction."
+        },
+        {
+          question: "Do you handle both MCD and DDA approvals?",
+          answer: "Yes, we work with both MCD (Municipal Corporation of Delhi) and DDA (Delhi Development Authority) for various approvals."
+        }
+      ]
+    },
+    {
+      title: "Affidavits & Notary Services",
+      description: "Name change, DOB, address proof, relationship affidavits, notarization",
+      icon: Briefcase,
       category: "legal",
+      price: "₹200 onwards",
+      faq: [
+        {
+          question: "What types of affidavits do you prepare?",
+          answer: "We prepare affidavits for name change, date of birth correction, address proof, relationship proof, income certificates, and custom affidavits."
+        },
+        {
+          question: "Do you provide notarization services?",
+          answer: "Yes, we offer complete notarization services and help with e-stamp paper procurement (₹10-₹500)."
+        }
+      ]
+    },
+    {
+      title: "Income Tax Return (ITR) Filing",
+      description: "All ITR forms for salaried, business owners, freelancers",
+      icon: Calculator,
+      category: "tax",
       price: "₹500 onwards",
       faq: [
         {
           question: "Which ITR forms do you handle?",
-          answer: "We file all ITR forms (ITR-1 to ITR-7) for individuals, businesses, companies, and professionals."
+          answer: "We file all ITR forms (ITR-1 to ITR-7) for salaried individuals, business owners, freelancers, and companies with experienced accountants."
         },
         {
-          question: "Do you provide GST services?",
-          answer: "Yes, complete GST registration, monthly/quarterly returns, and compliance management for businesses."
+          question: "Do you provide tax planning consultation?",
+          answer: "Yes, we offer tax planning advice, investment guidance, and strategies to minimize tax liability legally."
+        }
+      ]
+    },
+    {
+      title: "GST & Business Services",
+      description: "GST registration, filing, MSME registration, DSC, business setup",
+      icon: Calculator,
+      category: "tax",
+      price: "₹1000 onwards",
+      faq: [
+        {
+          question: "What GST services do you provide?",
+          answer: "Complete GST registration, monthly/quarterly GST return filing, MSME/Udyam registration, and Digital Signature Certificate (DSC) services."
         },
         {
-          question: "What about bookkeeping services?",
-          answer: "We offer complete bookkeeping, financial statement preparation, and accounting solutions for businesses."
+          question: "Can you help set up new businesses?",
+          answer: "Yes, we assist with proprietorship, partnership, and LLP registration, along with all compliance requirements."
+        }
+      ]
+    },
+    {
+      title: "Bookkeeping & Financial Services",
+      description: "Monthly accounts, balance sheet, P&L, TDS returns, financial reports",
+      icon: Calculator,
+      category: "tax",
+      price: "₹2000 onwards",
+      faq: [
+        {
+          question: "What bookkeeping services do you offer?",
+          answer: "Monthly income & expense management, balance sheet preparation, profit/loss statements, and annual financial report preparation."
+        },
+        {
+          question: "Do you handle TDS returns?",
+          answer: "Yes, we file TDS returns and ensure compliance with all TDS-related requirements for businesses and individuals."
         }
       ]
     }
@@ -194,7 +309,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
         >
           {filteredServices.map((service, index) => (
             <motion.div
@@ -244,6 +359,45 @@ const Services = () => {
               </Card>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Additional Services Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="bg-blue-50 rounded-xl p-8"
+        >
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Additional Services</h2>
+            <p className="text-lg text-gray-600">Value-added services to make your experience seamless</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all">
+              <MessageCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="font-semibold text-gray-800 mb-2">Appointment Booking</h3>
+              <p className="text-sm text-gray-600">RTO, SDM, Passport Seva Kendra appointments</p>
+            </div>
+            
+            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all">
+              <Car className="h-12 w-12 text-green-600 mx-auto mb-4" />
+              <h3 className="font-semibold text-gray-800 mb-2">Pickup & Delivery</h3>
+              <p className="text-sm text-gray-600">Document collection and delivery in Delhi NCR</p>
+            </div>
+            
+            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all">
+              <FileText className="h-12 w-12 text-yellow-600 mx-auto mb-4" />
+              <h3 className="font-semibold text-gray-800 mb-2">Document Checklist</h3>
+              <p className="text-sm text-gray-600">Personalized checklist for each service</p>
+            </div>
+            
+            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all">
+              <MessageCircle className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="font-semibold text-gray-800 mb-2">24/7 Support</h3>
+              <p className="text-sm text-gray-600">WhatsApp and call support for queries</p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </div>

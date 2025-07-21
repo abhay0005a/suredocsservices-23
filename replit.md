@@ -1,68 +1,60 @@
-# SureDocs - Document Services Website
+# SureDocs - Professional Document Services
 
-## Overview
-Professional multi-page website for SureDocs, a document services company in Delhi NCR. The site offers comprehensive document processing services including driving licenses, birth certificates, passports, marriage certificates, property transfers, and ITR filing & accounting services.
+## Project Overview
+SureDocs is a comprehensive document services website for Delhi NCR, offering government documentation, municipal services, legal & notary work, and accounting & tax services. The site has been transformed from a single-page layout to a professional multi-page website with modern animations and responsive design.
 
-## Project Architecture
-- **Frontend**: React + TypeScript + Vite
-- **Routing**: Wouter (lightweight routing)
-- **Styling**: Tailwind CSS + shadcn/ui components
-- **Animations**: Framer Motion
-- **State Management**: TanStack Query for data fetching
-- **Backend**: Express.js with TypeScript
-- **Database**: In-memory storage (MemStorage)
+## Architecture
+- **Frontend**: React with TypeScript, Vite, Tailwind CSS, Framer Motion
+- **Routing**: Wouter for client-side navigation
+- **UI Components**: Shadcn/ui components with Radix UI primitives
+- **Backend**: Express.js server for API endpoints
+- **Styling**: Tailwind CSS with custom design system
+- **Animations**: Framer Motion for page transitions and interactions
 
-## Recent Changes
-### January 21, 2025
-- ✅ Successfully migrated from Lovable to Replit environment
-- ✅ Converted single-page to multi-page architecture with navigation
-- ✅ Created 4 main pages: Home, Services, About, Contact
-- ✅ Implemented sticky navigation with active state highlighting
-- ✅ Added smooth scroll behavior and page transitions
-- ✅ Enhanced WhatsApp floating chat button with animations
-- ✅ Built interactive Services page with category filtering and FAQ accordions
-- ✅ Added comprehensive About page with team information and stats
-- ✅ Created professional Contact page with form and business info
-- ✅ Integrated Framer Motion for smooth animations throughout
+## Recent Changes (January 21, 2025)
+- ✅ Migrated from Lovable to Replit environment
+- ✅ Updated routing from react-router-dom to wouter
+- ✅ Created multi-page structure (Home, Services, About, Contact)
+- ✅ Added sticky navigation with active page highlighting
+- ✅ Implemented smooth scroll behavior and page transitions
+- ✅ Updated services data to match client's actual offerings
+- ✅ Added comprehensive FAQ sections for each service
+- ✅ Created service categorization (Government, Municipal, Legal, Tax)
+- ✅ Added WhatsApp floating button with tooltip
+- ✅ Implemented responsive design with mobile navigation
 
-## Page Structure
-```
-/              - Home (animated hero, intro, CTA buttons)
-/services      - Services (filterable by category, expandable FAQs)
-/about         - About Us (mission, team, statistics, why choose us)
-/contact       - Contact (form, business hours, map placeholder, WhatsApp)
-```
+## Service Categories
+1. **Government Documents**: Birth/Death certificates, Marriage certificates, Driving licenses, Vehicle RC, Passports, PAN/Aadhaar
+2. **Municipal Services**: Health trade licenses, Property mutation, Building plan approvals (MCD/DDA/DJB)
+3. **Legal & Notary**: Affidavits, Notarization, E-stamp paper services
+4. **Accounting & Tax**: ITR filing, GST services, Business registration, Bookkeeping, TDS returns
 
-## Key Features Implemented
-- ✅ Sticky top navbar with scroll highlighting
-- ✅ Smooth scroll between sections
-- ✅ Animated page transitions with Framer Motion
-- ✅ WhatsApp floating chat button on all pages
-- ✅ Responsive design for mobile/tablets
-- ✅ FAQ accordion in Services page
-- ✅ Service category filtering
-- ✅ Professional contact form
-- ✅ SEO-friendly structure with proper heading tags
-- ✅ Fast-loading assets and minimal design
+## Key Features
+- Animated homepage with call-to-action buttons
+- Interactive services page with category filtering
+- FAQ accordion for each service
+- Professional about page with team information
+- Contact form with WhatsApp integration
+- Sticky navigation with smooth scrolling
+- Mobile-responsive design
+- SEO-friendly structure
 
 ## User Preferences
-- Clean, professional design aesthetic
-- Consistent color scheme (blue primary, green for WhatsApp)
-- Minimal and easy navigation
-- Fast-loading and mobile-responsive
-- Strong focus on WhatsApp integration for customer communication
+- Professional, clean design aesthetic
+- Blue and green color scheme (trust colors)
+- WhatsApp integration for customer communication
+- Focus on Delhi NCR services
+- Emphasis on legal compliance and transparency
 
-## Migration Notes
-- Successfully converted from react-router-dom to wouter for Replit compatibility
-- Fixed routing issues and component imports
-- Added proper query client setup with TanStack Query
-- Maintained original design aesthetics while enhancing functionality
-- All interactive features working properly including animations and form handling
+## Technical Notes
+- Uses Replit's Vite setup with Express backend
+- All animations handled by Framer Motion
+- Responsive breakpoints: sm (640px), md (768px), lg (1024px)
+- WhatsApp number: +91 92052 53438
+- Service area: Delhi NCR specifically
 
-## Current Status
-✅ Migration completed successfully
-✅ Multi-page structure implemented
-✅ All interactive features functional
-✅ Responsive design working
-✅ WhatsApp integration active
-✅ Ready for deployment
+## Contact Integration
+- WhatsApp integration throughout the site
+- Contact form that opens WhatsApp with pre-filled message
+- Floating WhatsApp button on all pages
+- Phone and email contact information prominently displayed

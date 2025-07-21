@@ -38,8 +38,8 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Professional document services including driving licenses, birth certificates, passports, 
-            marriage certificates, property transfers, and comprehensive ITR filing & accounting services in Delhi NCR.
+            Complete government document assistance, municipal services, legal & notary work, and professional 
+            accounting & tax services in Delhi NCR. From birth certificates to business registration - we handle it all.
           </motion.p>
 
           <motion.div 

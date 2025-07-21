@@ -16,19 +16,19 @@ const About = () => {
       name: "Rajesh Kumar",
       role: "Founder & Document Specialist",
       experience: "12+ years in government documentation",
-      expertise: ["Driving License", "Passport Services", "Property Transfer"]
+      expertise: ["MCD/NDMC Services", "Property Mutation", "Municipal Licenses"]
     },
     {
       name: "Priya Sharma",
       role: "Tax & Accounting Expert",
       experience: "8+ years in taxation and accounting",
-      expertise: ["ITR Filing", "GST Returns", "Business Registration"]
+      expertise: ["ITR Filing", "GST Services", "Business Setup", "MSME Registration"]
     },
     {
       name: "Amit Singh",
-      role: "Legal Documentation Head",
+      role: "Legal & Municipal Services Head",
       experience: "10+ years in legal documentation",
-      expertise: ["Marriage Certificates", "Birth/Death Certificates", "Legal Compliance"]
+      expertise: ["Affidavits", "Notary Services", "Building Approvals", "DDA/MCD Work"]
     }
   ];
 
@@ -36,17 +36,17 @@ const About = () => {
     {
       icon: Target,
       title: "Our Mission",
-      description: "To simplify government paperwork and make document services accessible to everyone in Delhi NCR through legal, efficient, and transparent processes."
+      description: "To provide comprehensive government, municipal, legal, and tax services that save time and eliminate the hassle of dealing with complex bureaucratic processes in Delhi NCR."
     },
     {
       icon: Shield,
       title: "Our Promise",
-      description: "100% legal compliance, transparent pricing, timely delivery, and complete customer satisfaction in all our document services."
+      description: "100% legal compliance, transparent pricing, expert guidance, and end-to-end support for all government documentation and business requirements."
     },
     {
       icon: Award,
       title: "Our Expertise",
-      description: "Deep knowledge of government procedures, established relationships with officials, and proven track record of successful document processing."
+      description: "Specialized knowledge in MCD/NDMC procedures, DDA/DJB processes, municipal licensing, tax compliance, and business registration with proven success rates."
     }
   ];
 
@@ -62,8 +62,8 @@ const About = () => {
         >
           <h1 className="text-5xl font-bold text-gray-800 mb-6">About SureDocs</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner for all government document services in Delhi NCR. 
-            We've been helping individuals and businesses navigate complex paperwork for over a decade.
+            Your comprehensive solution for government documents, municipal services, legal documentation, and tax compliance in Delhi NCR. 
+            We specialize in MCD/NDMC services, property matters, business registration, and complete accounting solutions.
           </p>
         </motion.div>
 
