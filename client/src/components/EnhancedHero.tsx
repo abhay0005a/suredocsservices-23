@@ -47,17 +47,12 @@ const EnhancedHero = () => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 4000);
 
-    const engagementTimer = setTimeout(() => {
-      if (!userEngaged) {
-        setShowOfferModal(true);
-      }
-    }, 5000);
+    // Engagement timer disabled - no popup
 
     return () => {
       clearInterval(slideInterval);
-      clearTimeout(engagementTimer);
     };
-  }, [userEngaged]);
+  }, []);
 
   const handleUserEngagement = () => {
     setUserEngaged(true);
@@ -251,67 +246,7 @@ const EnhancedHero = () => {
         </motion.div>
       </motion.div>
 
-      {/* Engagement Modal */}
-      <AnimatePresence>
-        {showOfferModal && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-            onClick={() => setShowOfferModal(false)}
-          >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0, rotateY: -15 }}
-              animate={{ scale: 1, opacity: 1, rotateY: 0 }}
-              exit={{ scale: 0.8, opacity: 0, rotateY: 15 }}
-              className="bg-white rounded-3xl p-8 max-w-md mx-auto shadow-2xl border-4 border-yellow-400"
-              onClick={(e) => e.stopPropagation()}
-              style={{ direction: 'ltr' }}
-            >
-              <div className="text-center">
-                <motion.div
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 0.5, repeat: 3 }}
-                  className="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center"
-                >
-                  <Star className="h-10 w-10 text-white" />
-                </motion.div>
-                
-                <h3 className="text-2xl font-bold text-gray-800 mb-4" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
-                  🎉 Special Welcome Offer!
-                </h3>
-                
-                <p className="text-gray-600 mb-6" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
-                  Get <span className="font-bold text-green-600">20% OFF</span> on your first document service + FREE consultation!
-                </p>
-                
-                <div className="space-y-3">
-                  <Button
-                    onClick={() => openWhatsApp("Hi! I saw the 20% OFF welcome offer. Can you help me with my documents?")}
-                    className="w-full bg-green-500 hover:bg-green-600 text-white text-lg py-3"
-                  >
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Claim Offer Now
-                  </Button>
-                  
-                  <Button
-                    variant="outline"
-                    onClick={() => setShowOfferModal(false)}
-                    className="w-full"
-                  >
-                    Maybe Later
-                  </Button>
-                </div>
-                
-                <p className="text-xs text-gray-500 mt-4" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
-                  *Offer valid for new customers only
-                </p>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Engagement Modal - Disabled */}
     </>
   );
 };
