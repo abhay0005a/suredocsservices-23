@@ -53,6 +53,50 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=center&auto=format&q=80" />
     <meta name="twitter:image:alt" content="Professional document services in Delhi NCR" />
     
+    <!-- Local Business Hours Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday", 
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+    </script>
+
+    <!-- Service Schema for Each Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Birth Certificate Services Delhi NCR",
+      "description": "Fast and legal birth certificate services in Delhi NCR through official MCD/NDMC channels",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "SureDocs Services"
+      },
+      "areaServed": [
+        "Delhi",
+        "Gurgaon", 
+        "Noida",
+        "Faridabad",
+        "Ghaziabad"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "600",
+        "priceCurrency": "INR",
+        "availability": "InStock"
+      }
+    }
+    </script>
+
     <!-- Enhanced Local Business Schema -->
     <script type="application/ld+json">
     {
@@ -268,9 +312,30 @@
     }
     </script>
     
-    <!-- Preconnect for Performance -->
+    <!-- Advanced Performance Optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preload" href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=center&auto=format&q=80" as="image">
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//api.whatsapp.com">
+    
+    <!-- Additional SEO Links -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Performance Hints -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=yes">
+    
+    <!-- Rich Snippets Enhancement -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="SureDocs">
+    <meta name="apple-mobile-web-app-title" content="SureDocs">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   </head>
   <body>
     <div id="root"></div>

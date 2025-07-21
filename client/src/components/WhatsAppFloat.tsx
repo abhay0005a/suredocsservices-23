@@ -1,8 +1,11 @@
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { trackConversion } from "@/lib/analytics";
 
 const WhatsAppFloat = () => {
   const openWhatsApp = () => {
+    // Track WhatsApp conversion
+    trackConversion('whatsapp', 'floating_button');
     window.open("https://wa.me/919205253438?text=Hi! I need help with document services.", "_blank");
   };
 

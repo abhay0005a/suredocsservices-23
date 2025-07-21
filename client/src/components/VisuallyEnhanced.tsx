@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { trackConversion, trackServiceInterest } from "@/lib/analytics";
 import { 
   FileText, 
   Car, 
@@ -77,6 +78,10 @@ const VisuallyEnhanced = () => {
   ];
 
   const openWhatsApp = (service: string) => {
+    // Track service interest and conversion
+    trackServiceInterest(service, 'whatsapp_click');
+    trackConversion('whatsapp', service);
+    
     const message = `Hi! I'm interested in ${service}. Can you help me?`;
     window.open(`https://wa.me/919205253438?text=${encodeURIComponent(message)}`, "_blank");
   };
