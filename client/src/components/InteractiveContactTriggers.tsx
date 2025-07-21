@@ -87,8 +87,7 @@ const InteractiveContactTriggers = () => {
 
     // Timer-based modals
     const timers = [
-      setTimeout(() => setShowSocialProof(true), 8000),
-      setTimeout(() => setShowTimerModal(true), 20000)
+      setTimeout(() => setShowSocialProof(true), 8000)
     ];
 
     // Testimonial rotation
@@ -245,56 +244,7 @@ const InteractiveContactTriggers = () => {
         )}
       </AnimatePresence>
 
-      {/* Timer-Based Urgency Modal */}
-      <AnimatePresence>
-        {showTimerModal && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            className="fixed bottom-4 right-4 z-40 max-w-sm"
-          >
-            <Card className="shadow-2xl border-2 border-red-300 bg-gradient-to-r from-red-500 to-red-600 text-white">
-              <CardContent className="p-6 relative overflow-hidden">
-                <button
-                  onClick={() => setShowTimerModal(false)}
-                  className="absolute top-2 right-2 text-white/80 hover:text-white"
-                >
-                  <X className="h-4 w-4" />
-                </button>
 
-                <div className="text-center">
-                  <motion.div
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                    className="text-4xl mb-2"
-                  >
-                    ⏰
-                  </motion.div>
-                  
-                  <h4 className="text-lg font-bold mb-2">Limited Time Offer!</h4>
-                  <p className="text-sm mb-3 opacity-90">
-                    Get 30% OFF - Offer expires in:
-                  </p>
-                  
-                  <div className="bg-white/20 rounded-lg p-3 mb-4">
-                    <div className="text-2xl font-bold">{formatTime(timeLeft)}</div>
-                    <div className="text-xs">Minutes remaining</div>
-                  </div>
-
-                  <Button
-                    onClick={() => openWhatsApp("the 30% OFF limited time offer")}
-                    className="w-full bg-white text-red-600 hover:bg-gray-100 font-bold"
-                  >
-                    <Zap className="mr-2 h-4 w-4" />
-                    Claim Discount Now
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Scroll-Based Contact Trigger */}
       <AnimatePresence>
@@ -329,40 +279,7 @@ const InteractiveContactTriggers = () => {
         )}
       </AnimatePresence>
 
-      {/* Floating Stats */}
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 5 }}
-        className="fixed top-1/2 right-4 transform -translate-y-1/2 z-30"
-      >
-        <Card className="shadow-xl border border-gray-200 bg-white/95 backdrop-blur-sm">
-          <CardContent className="p-4 text-center">
-            <div className="space-y-3">
-              <div>
-                <div className="text-2xl font-bold text-blue-600">5000+</div>
-                <div className="text-xs text-gray-600">Happy Customers</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-green-600">4.9★</div>
-                <div className="text-xs text-gray-600">Rating</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-purple-600">24hr</div>
-                <div className="text-xs text-gray-600">Response</div>
-              </div>
-            </div>
-            
-            <Button
-              onClick={() => openWhatsApp("joining 5000+ happy customers")}
-              size="sm"
-              className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white text-xs"
-            >
-              Join Them
-            </Button>
-          </CardContent>
-        </Card>
-      </motion.div>
+
     </>
   );
 };

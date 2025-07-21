@@ -131,9 +131,9 @@ const ModernHero = () => {
                 onClick={() => window.location.href = '/services'}
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-bold rounded-full backdrop-blur-sm"
+                className="border-2 border-white text-black bg-white hover:bg-gray-100 px-8 py-4 text-lg font-bold rounded-full backdrop-blur-sm"
               >
-                <Phone className="mr-2 h-6 w-6" />
+                <Phone className="mr-2 h-6 w-6 text-black" />
                 Call: +91 92052 53438
               </Button>
             </motion.div>

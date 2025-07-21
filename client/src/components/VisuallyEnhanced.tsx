@@ -101,16 +101,16 @@ const VisuallyEnhanced = () => {
             </p>
             <div className="flex justify-center items-center space-x-6 mb-8">
               <div className="flex items-center space-x-2">
-                <Star className="h-6 w-6 text-yellow-500 fill-current" />
-                <span className="text-lg font-semibold">4.9 Rating</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Users className="h-6 w-6 text-blue-500" />
-                <span className="text-lg font-semibold">5000+ Customers</span>
-              </div>
-              <div className="flex items-center space-x-2">
                 <CheckCircle className="h-6 w-6 text-green-500" />
                 <span className="text-lg font-semibold">100% Legal</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-6 w-6 text-blue-500" />
+                <span className="text-lg font-semibold">Fast Service</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Shield className="h-6 w-6 text-purple-500" />
+                <span className="text-lg font-semibold">Trusted Process</span>
               </div>
             </div>
           </div>
@@ -154,8 +154,8 @@ const VisuallyEnhanced = () => {
                       <div className="text-sm text-gray-500">Delivery: {service.time}</div>
                     </div>
                     <div className="flex items-center space-x-1">
-                      <Star className="h-4 w-4 text-yellow-500 fill-current" />
-                      <span className="text-sm font-medium">4.9</span>
+                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <span className="text-sm font-medium">Verified</span>
                     </div>
                   </div>
                   
@@ -234,7 +234,7 @@ const VisuallyEnhanced = () => {
             <CardContent className="relative z-10 p-12">
               <h3 className="text-4xl font-bold mb-6">Ready to Get Started?</h3>
               <p className="text-xl mb-8 opacity-90">
-                Join 5000+ satisfied customers who trust us with their documents
+                Trust us with your important documents - professional and reliable service
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -259,7 +259,7 @@ const VisuallyEnhanced = () => {
               </div>
 
               <div className="mt-8 text-sm opacity-75">
-                💬 Usually responds within 5 minutes • 🏆 4.9/5 rating • ⚡ Fast delivery
+                💬 Usually responds within 5 minutes • 🏆 Professional service • ⚡ Fast delivery
               </div>
             </CardContent>
           </Card>
