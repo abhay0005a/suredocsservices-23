@@ -15,63 +15,48 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-background shadow-soft sticky top-0 z-50" itemScope itemType="https://schema.org/Organization">
+    <header className="bg-white shadow-sm sticky top-0 z-50" itemScope itemType="https://schema.org/Organization">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logoImage} alt="SureDocs Services Logo - Professional Document Services in Delhi NCR" className="h-10 w-10" itemProp="logo" />
-            <div>
-              <h1 className="text-xl font-bold text-primary" itemProp="name">SureDocs Services</h1>
-              <p className="text-xs text-muted-foreground" itemProp="slogan">Documents & ITR Services</p>
+            <div className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-lg">
+              SureDocs
             </div>
+            <div className="text-sm text-gray-600">Services</div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              Document Services
+              Services
             </button>
             <button
-              onClick={() => scrollToSection("itr-services")}
-              className="text-foreground hover:text-primary transition-colors"
+              onClick={() => scrollToSection("about")}
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              ITR & Accounting
-            </button>
-            <button
-              onClick={() => scrollToSection("why-choose-us")}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Why Choose Us
-            </button>
-            <button
-              onClick={() => scrollToSection("faq")}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              FAQ
+              About Us
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Contact
             </button>
             <Button
-              variant="cta"
-              size="sm"
-              onClick={() => window.open("tel:+919205253438")}
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium"
+              onClick={() => window.open("https://wa.me/919205253438", "_blank")}
             >
-              <Phone className="h-4 w-4" />
-              Call Now
+              WhatsApp
             </Button>
           </nav>
 
@@ -91,47 +76,33 @@ const Header = () => {
           <nav className="mt-4 space-y-4 md:hidden">
             <button
               onClick={() => scrollToSection("home")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors py-2"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors py-2"
             >
-              Document Services
+              Services
             </button>
             <button
-              onClick={() => scrollToSection("itr-services")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+              onClick={() => scrollToSection("about")}
+              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors py-2"
             >
-              ITR & Accounting
-            </button>
-            <button
-              onClick={() => scrollToSection("why-choose-us")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              Why Choose Us
-            </button>
-            <button
-              onClick={() => scrollToSection("faq")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              FAQ
+              About Us
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors py-2"
             >
               Contact
             </button>
             <Button
-              variant="cta"
-              className="w-full"
-              onClick={() => window.open("tel:+919205253438")}
+              className="w-full bg-green-500 hover:bg-green-600 text-white"
+              onClick={() => window.open("https://wa.me/919205253438", "_blank")}
             >
-              <Phone className="h-4 w-4" />
-              Call Now
+              WhatsApp
             </Button>
           </nav>
         )}
