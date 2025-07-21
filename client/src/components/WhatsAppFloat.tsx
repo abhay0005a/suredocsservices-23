@@ -1,63 +1,36 @@
-import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { MessageCircle, X } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 const WhatsAppFloat = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [showTooltip, setShowTooltip] = useState(false);
-
-  useEffect(() => {
-    // Show the button after a short delay
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-      // Show tooltip after another delay
-      setTimeout(() => setShowTooltip(true), 2000);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const openWhatsApp = () => {
-    window.open("https://wa.me/919205253438?text=Hi! I found your website and need help with document services.", "_blank");
-    setShowTooltip(false);
+    window.open("https://wa.me/919205253438?text=Hi! I need help with document services.", "_blank");
   };
 
-  if (!isVisible) return null;
-
   return (
-    <>
-      {/* WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        {/* Tooltip */}
-        {showTooltip && (
-          <div className="absolute bottom-16 right-0 bg-foreground text-background px-4 py-2 rounded-lg shadow-lg text-sm whitespace-nowrap animate-fade-in">
-            <div className="relative">
-              Need help? Chat with us!
-              <button
-                onClick={() => setShowTooltip(false)}
-                className="ml-3 text-background/70 hover:text-background"
-              >
-                <X className="h-3 w-3" />
-              </button>
-              {/* Arrow */}
-              <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
-            </div>
-          </div>
-        )}
-        
-        {/* WhatsApp Button */}
-        <Button
-          onClick={openWhatsApp}
-          className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 animate-scale-in"
-          size="icon"
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 1 }}
+      className="fixed bottom-6 right-6 z-50"
+    >
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={openWhatsApp}
+        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+      >
+        <MessageCircle className="h-6 w-6 group-hover:scale-110 transition-transform" />
+        <motion.div
+          initial={{ opacity: 0, x: 10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 1.5 }}
+          className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <MessageCircle className="h-7 w-7 text-white" />
-        </Button>
-
-        {/* Pulse Animation */}
-        <div className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-20"></div>
-      </div>
-    </>
+          Chat with us on WhatsApp
+          <div className="absolute top-1/2 left-full transform -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
+        </motion.div>
+      </motion.button>
+    </motion.div>
   );
 };
 
