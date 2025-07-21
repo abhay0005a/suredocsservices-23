@@ -55,9 +55,9 @@ const Navigation = () => {
               className="flex items-center space-x-3 cursor-pointer"
             >
               <img 
-                src="/attached_assets/Screenshot 2025-07-21 134709_1753085835477.png" 
+                src="/attached_assets/Screenshot 2025-07-19 155630_1753085937065.png" 
                 alt="SureDocs Logo" 
-                className="h-10 w-auto max-w-[180px] object-contain"
+                className="h-12 w-12 object-contain"
                 onError={(e) => {
                   // Fallback to text logo if image fails to load
                   e.currentTarget.style.display = 'none';
