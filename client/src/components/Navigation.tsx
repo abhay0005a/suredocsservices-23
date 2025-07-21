@@ -54,7 +54,20 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-3 cursor-pointer"
             >
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-xl">
+              <img 
+                src="/attached_assets/Pi7_Tool_Screenshot2025-07-19155630_1753085216252.jpeg" 
+                alt="SureDocs Logo" 
+                className="h-12 w-auto"
+                onError={(e) => {
+                  // Fallback to text logo if image fails to load
+                  e.currentTarget.style.display = 'none';
+                  const fallbackElement = e.currentTarget.nextElementSibling as HTMLElement;
+                  if (fallbackElement) {
+                    fallbackElement.style.display = 'block';
+                  }
+                }}
+              />
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-xl hidden">
                 SureDocs
               </div>
               <div className="text-sm text-gray-600 hidden sm:block">Services</div>
