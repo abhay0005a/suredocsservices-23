@@ -53,24 +53,43 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/">
             <motion.div 
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-3 cursor-pointer"
+              whileHover={{ scale: 1.08, rotate: 1 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center space-x-3 cursor-pointer group"
             >
-              <img 
-                src="/attached_assets/Screenshot 2025-07-19 155630_1753085937065.png" 
-                alt="SureDocs Logo" 
-                className="h-12 w-12 object-contain"
-                onError={(e) => {
-                  // Fallback to text logo if image fails to load
-                  e.currentTarget.style.display = 'none';
-                  const fallbackElement = e.currentTarget.nextElementSibling as HTMLElement;
-                  if (fallbackElement) {
-                    fallbackElement.style.display = 'block';
-                  }
-                }}
-              />
-              
-
+              <div className="relative">
+                <motion.div
+                  className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-all duration-300"
+                  whileHover={{ scale: 1.1 }}
+                />
+                <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src="/attached_assets/Screenshot 2025-07-19 155630_1753088749711.png" 
+                    alt="SureDocs Logo" 
+                    className="h-10 w-10 object-contain filter brightness-0 invert"
+                    onError={(e) => {
+                      // Fallback to text logo if image fails to load
+                      e.currentTarget.style.display = 'none';
+                      const fallbackElement = e.currentTarget.nextElementSibling as HTMLElement;
+                      if (fallbackElement) {
+                        fallbackElement.style.display = 'block';
+                      }
+                    }}
+                  />
+                  <div className="bg-blue-600 text-white px-3 py-1.5 rounded-lg font-bold text-lg hidden">
+                    SureDocs
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <motion.div 
+                  className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  SureDocs
+                </motion.div>
+                <div className="text-xs text-gray-500 font-medium">Professional Services</div>
+              </div>
             </motion.div>
           </Link>
 
