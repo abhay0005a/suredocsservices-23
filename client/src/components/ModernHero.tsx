@@ -82,7 +82,7 @@ const ModernHero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block mb-6"
             >
-              <div className="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold text-sm shadow-xl">
+              <div className="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold text-sm shadow-xl border-2 border-yellow-300">
                 ⚡ {currentSlideData.highlight}
               </div>
             </motion.div>
@@ -152,7 +152,7 @@ const ModernHero = () => {
                   animate={{ scale: 1 }}
                   transition={{ delay: 1 + index * 0.1, type: "spring" }}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20"
+                  className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 border-2 border-white/40 shadow-lg"
                 >
                   <badge.icon className="h-8 w-8 mx-auto mb-2" />
                   <div className="text-lg font-bold">{badge.text}</div>

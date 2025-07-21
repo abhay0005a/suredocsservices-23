@@ -91,7 +91,7 @@ const VisuallyEnhanced = () => {
           viewport={{ once: true }}
           className="text-center mb-20 relative"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl -mx-8 -my-8"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl -mx-8 -my-8 border border-blue-200"></div>
           <div className="relative z-10 py-16">
             <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
               Our Premium Services
@@ -128,7 +128,7 @@ const VisuallyEnhanced = () => {
               whileHover={{ y: -10, scale: 1.02 }}
               className="group"
             >
-              <Card className="border-0 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 bg-white">
+              <Card className="border-2 border-gray-100 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 bg-white">
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={service.image} 
@@ -197,7 +197,7 @@ const VisuallyEnhanced = () => {
                 whileHover={{ scale: 1.05 }}
                 className="group"
               >
-                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <Card className="border-2 border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden bg-white">
                   <div className="relative h-48">
                     <img 
                       src={feature.image} 
@@ -229,7 +229,7 @@ const VisuallyEnhanced = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <Card className="border-0 shadow-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white overflow-hidden">
+          <Card className="border-2 border-blue-300 shadow-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=400&fit=crop&crop=center&auto=format&q=80')] opacity-20 bg-cover bg-center"></div>
             <CardContent className="relative z-10 p-12">
               <h3 className="text-4xl font-bold mb-6">Ready to Get Started?</h3>

@@ -52,7 +52,7 @@ const StickyNotification = () => {
           exit={{ x: 300, opacity: 0 }}
           className="fixed bottom-4 right-4 z-40 max-w-sm"
         >
-          <div className={`${offers[currentOffer].color} text-white rounded-lg shadow-2xl overflow-hidden`} dir="ltr">
+          <div className={`${offers[currentOffer].color} text-white rounded-lg shadow-2xl overflow-hidden border-2 border-white/20`} dir="ltr">
             <div className="p-4">
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center space-x-2">

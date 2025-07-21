@@ -31,6 +31,29 @@ h1, h2, h3, h4, h5, h6, p, span, div, button, a, li, td, th {
   text-align: start !important;
 }
 
+/* Ensure proper background rendering */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+/* Fix card visibility issues */
+.shadow-xl, .shadow-lg, .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Ensure text is visible */
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

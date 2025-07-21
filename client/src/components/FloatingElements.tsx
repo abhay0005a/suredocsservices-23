@@ -65,7 +65,7 @@ const FloatingElements = () => {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className={`${quickActions[currentAction].color} text-white rounded-2xl p-4 shadow-2xl cursor-pointer max-w-xs`}
+              className={`${quickActions[currentAction].color} text-white rounded-2xl p-4 shadow-2xl cursor-pointer max-w-xs border-2 border-white/20`}
               onClick={quickActions[currentAction].action}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -114,7 +114,7 @@ const FloatingElements = () => {
         transition={{ delay: 15 }}
         className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-30"
       >
-        <div className="bg-red-500 text-white px-6 py-3 rounded-full shadow-2xl" dir="ltr">
+        <div className="bg-red-500 text-white px-6 py-3 rounded-full shadow-2xl border-2 border-white/30" dir="ltr">
           <div className="flex items-center space-x-2">
             <Clock className="h-4 w-4 animate-pulse" />
             <span className="text-sm font-bold" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
