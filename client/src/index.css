@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force LTR direction globally */
+* {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+html, body {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Ensure all text is left-aligned */
+h1, h2, h3, h4, h5, h6, p, span, div, button, a {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */

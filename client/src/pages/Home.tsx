@@ -4,10 +4,12 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import SEOHead from "@/components/SEOHead";
 import { InteractiveStats, ServicePreview, ScrollToTop } from "@/components/InteractiveElements";
-import InteractiveHero from "@/components/InteractiveHero";
+import EnhancedHero from "@/components/EnhancedHero";
 import ParallaxSection from "@/components/ParallaxSection";
 import StickyNotification from "@/components/StickyNotification";
 import InteractiveServiceCards from "@/components/InteractiveServiceCards";
+import AdvancedInteractions from "@/components/AdvancedInteractions";
+import FloatingElements from "@/components/FloatingElements";
 
 const Home = () => {
   return (
@@ -17,14 +19,17 @@ const Home = () => {
         description="Get your documents hassle-free in Delhi NCR. Birth certificates, driving licenses, passports, property mutation, ITR filing & more. 100% legal process."
         keywords="document services Delhi NCR, birth certificate Delhi, driving license Delhi, passport services Delhi, property mutation Delhi, ITR filing Delhi"
       />
-      {/* Interactive Hero Section */}
-      <InteractiveHero />
+      {/* Enhanced Hero Section */}
+      <EnhancedHero />
       
       {/* Interactive Service Cards */}
       <InteractiveServiceCards />
       
       {/* Parallax Features Section */}
       <ParallaxSection />
+      
+      {/* Advanced Interactions Section */}
+      <AdvancedInteractions />
       
       <div className="bg-gradient-to-br from-gray-50 to-blue-50">
       <main className="container mx-auto px-4 py-20">
@@ -141,6 +146,7 @@ const Home = () => {
       </main>
       <ScrollToTop />
       <StickyNotification />
+      <FloatingElements />
       </div>
     </>
   );

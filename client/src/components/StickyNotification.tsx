@@ -17,7 +17,7 @@ const StickyNotification = () => {
     },
     {
       icon: MessageCircle,
-      title: "Free Consultation",
+      title: "Free Consultation", 
       message: "Expert advice on your documents - completely FREE",
       action: "Get Help",
       color: "bg-green-500"
@@ -52,7 +52,7 @@ const StickyNotification = () => {
           exit={{ x: 300, opacity: 0 }}
           className="fixed bottom-4 right-4 z-40 max-w-sm"
         >
-          <div className={`${offers[currentOffer].color} text-white rounded-lg shadow-2xl overflow-hidden`}>
+          <div className={`${offers[currentOffer].color} text-white rounded-lg shadow-2xl overflow-hidden`} dir="ltr">
             <div className="p-4">
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center space-x-2">
@@ -60,7 +60,7 @@ const StickyNotification = () => {
                     const IconComponent = offers[currentOffer].icon;
                     return <IconComponent className="h-5 w-5" />;
                   })()}
-                  <span className="font-bold text-sm">{offers[currentOffer].title}</span>
+                  <span className="font-bold text-sm" style={{ direction: 'ltr' }}>{offers[currentOffer].title}</span>
                 </div>
                 <button
                   onClick={() => setIsVisible(false)}
@@ -70,7 +70,7 @@ const StickyNotification = () => {
                 </button>
               </div>
               
-              <p className="text-sm mb-3 opacity-90">
+              <p className="text-sm mb-3 opacity-90" style={{ direction: 'ltr' }}>
                 {offers[currentOffer].message}
               </p>
               

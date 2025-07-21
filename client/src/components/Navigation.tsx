@@ -45,9 +45,11 @@ const Navigation = () => {
           ? "bg-white/95 backdrop-blur-md shadow-lg" 
           : "bg-white shadow-sm"
       }`}
+      dir="ltr"
+      style={{ direction: 'ltr' }}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4" style={{ direction: 'ltr' }}>
+        <div className="flex items-center justify-between h-20" style={{ direction: 'ltr' }}>
           {/* Logo */}
           <Link href="/">
             <motion.div 
