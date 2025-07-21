@@ -14,6 +14,10 @@ const Header = () => {
     }
   };
 
+  const openWhatsApp = () => {
+    window.open("https://wa.me/919205253438?text=Hi! I need help with document services.", "_blank");
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50" itemScope itemType="https://schema.org/Organization">
       <div className="container mx-auto px-4 py-4">
@@ -53,10 +57,10 @@ const Header = () => {
               Contact
             </button>
             <Button
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium"
-              onClick={() => window.open("https://wa.me/919205253438", "_blank")}
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transform hover:scale-105 transition-all duration-300"
+              onClick={openWhatsApp}
             >
-              WhatsApp
+              Contact WhatsApp
             </Button>
           </nav>
 
@@ -99,10 +103,10 @@ const Header = () => {
               Contact
             </button>
             <Button
-              className="w-full bg-green-500 hover:bg-green-600 text-white"
-              onClick={() => window.open("https://wa.me/919205253438", "_blank")}
+              className="w-full bg-green-500 hover:bg-green-600 text-white transform hover:scale-105 transition-all duration-300"
+              onClick={openWhatsApp}
             >
-              WhatsApp
+              Contact WhatsApp
             </Button>
           </nav>
         )}

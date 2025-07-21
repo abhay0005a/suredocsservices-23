@@ -24,19 +24,19 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            onClick={scrollToContact}
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold"
+            onClick={openWhatsApp}
+            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
+            <MessageCircle className="h-5 w-5 mr-2" />
             Contact Us
           </Button>
           <Button
             variant="outline"
             size="lg"
-            onClick={openWhatsApp}
-            className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold"
+            onClick={scrollToContact}
+            className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold transform hover:scale-105 transition-all duration-300"
           >
-            <MessageCircle className="h-5 w-5 mr-2" />
-            WhatsApp Now
+            Learn More
           </Button>
         </div>
       </div>
