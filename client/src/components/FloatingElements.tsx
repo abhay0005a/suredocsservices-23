@@ -79,10 +79,10 @@ const FloatingElements = () => {
                   })()}
                 </div>
                 <div>
-                  <div className="font-bold text-sm" style={{ direction: 'ltr' }}>
+                  <div className="font-bold text-sm" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                     {quickActions[currentAction].text}
                   </div>
-                  <div className="text-xs opacity-90" style={{ direction: 'ltr' }}>
+                  <div className="text-xs opacity-90" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                     {quickActions[currentAction].subtext}
                   </div>
                 </div>
@@ -105,28 +105,7 @@ const FloatingElements = () => {
         )}
       </AnimatePresence>
 
-      {/* Success Stories Ticker */}
-      <motion.div
-        initial={{ x: -300 }}
-        animate={{ x: 0 }}
-        transition={{ delay: 10, duration: 0.8 }}
-        className="fixed top-1/2 left-0 transform -translate-y-1/2 z-30"
-      >
-        <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-r-2xl p-4 border-l-4 border-green-500 max-w-xs" dir="ltr">
-          <motion.div
-            animate={{ opacity: [1, 0.7, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-xs font-semibold text-green-600" style={{ direction: 'ltr' }}>LIVE UPDATE</span>
-            </div>
-            <p className="text-sm text-gray-700" style={{ direction: 'ltr' }}>
-              <strong>Priya S.</strong> just got her driving license processed in <strong>24 hours!</strong>
-            </p>
-          </motion.div>
-        </div>
-      </motion.div>
+
 
       {/* Urgency Timer */}
       <motion.div
@@ -138,7 +117,7 @@ const FloatingElements = () => {
         <div className="bg-red-500 text-white px-6 py-3 rounded-full shadow-2xl" dir="ltr">
           <div className="flex items-center space-x-2">
             <Clock className="h-4 w-4 animate-pulse" />
-            <span className="text-sm font-bold" style={{ direction: 'ltr' }}>
+            <span className="text-sm font-bold" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
               🔥 Limited Time: 20% OFF expires in 2 hours!
             </span>
             <Zap className="h-4 w-4 animate-bounce" />

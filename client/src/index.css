@@ -5,19 +5,30 @@
 /* Force LTR direction globally */
 * {
   direction: ltr !important;
-  text-align: left !important;
+  text-align: start !important;
+  unicode-bidi: normal !important;
 }
 
 html, body {
   direction: ltr !important;
-  text-align: left !important;
+  text-align: start !important;
+  unicode-bidi: normal !important;
 }
 
-/* Ensure all text is left-aligned */
-h1, h2, h3, h4, h5, h6, p, span, div, button, a {
+/* Ensure all text is left-aligned and not mirrored */
+h1, h2, h3, h4, h5, h6, p, span, div, button, a, li, td, th {
   direction: ltr !important;
-  text-align: left !important;
-  unicode-bidi: embed !important;
+  text-align: start !important;
+  unicode-bidi: normal !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  transform: none !important;
+}
+
+/* Fix any potential mirror/flip issues */
+.container, .flex, .grid {
+  direction: ltr !important;
+  text-align: start !important;
 }
 
 /* Smooth scrolling */

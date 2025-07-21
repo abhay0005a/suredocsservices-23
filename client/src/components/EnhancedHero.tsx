@@ -138,8 +138,8 @@ const EnhancedHero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -50 }}
                   transition={{ duration: 0.8 }}
-                  className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight text-left"
-                  style={{ direction: 'ltr' }}
+                  className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight"
+                  style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal', transform: 'none' }}
                 >
                   {currentSlideData.title}
                 </motion.h1>
@@ -149,8 +149,8 @@ const EnhancedHero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="text-xl md:text-2xl mb-8 opacity-90 text-left"
-                style={{ direction: 'ltr' }}
+                className="text-xl md:text-2xl mb-8 opacity-90"
+                style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}
               >
                 {currentSlideData.subtitle}
               </motion.p>
@@ -200,8 +200,8 @@ const EnhancedHero = () => {
                   >
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 group-hover:bg-white/20 transition-all border border-white/20">
                       <indicator.icon className="h-8 w-8 mx-auto mb-2 group-hover:scale-110 transition-transform" />
-                      <div className="text-lg font-bold text-left" style={{ direction: 'ltr' }}>{indicator.text}</div>
-                      <div className="text-sm opacity-80 text-left" style={{ direction: 'ltr' }}>{indicator.count}</div>
+                      <div className="text-lg font-bold" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>{indicator.text}</div>
+                      <div className="text-sm opacity-80" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>{indicator.count}</div>
                     </div>
                   </motion.div>
                 ))}
@@ -239,7 +239,7 @@ const EnhancedHero = () => {
             className="cursor-pointer"
             onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
           >
-            <div className="text-sm mb-2 text-left" style={{ direction: 'ltr' }}>Scroll to explore</div>
+            <div className="text-sm mb-2" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>Scroll to explore</div>
             <div className="w-6 h-10 border-2 border-white/50 rounded-full mx-auto flex justify-center">
               <motion.div
                 animate={{ y: [0, 12, 0] }}
@@ -278,11 +278,11 @@ const EnhancedHero = () => {
                   <Star className="h-10 w-10 text-white" />
                 </motion.div>
                 
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 text-left" style={{ direction: 'ltr' }}>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                   🎉 Special Welcome Offer!
                 </h3>
                 
-                <p className="text-gray-600 mb-6 text-left" style={{ direction: 'ltr' }}>
+                <p className="text-gray-600 mb-6" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                   Get <span className="font-bold text-green-600">20% OFF</span> on your first document service + FREE consultation!
                 </p>
                 
@@ -304,7 +304,7 @@ const EnhancedHero = () => {
                   </Button>
                 </div>
                 
-                <p className="text-xs text-gray-500 mt-4 text-left" style={{ direction: 'ltr' }}>
+                <p className="text-xs text-gray-500 mt-4" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                   *Offer valid for new customers only
                 </p>
               </div>

@@ -60,7 +60,7 @@ const StickyNotification = () => {
                     const IconComponent = offers[currentOffer].icon;
                     return <IconComponent className="h-5 w-5" />;
                   })()}
-                  <span className="font-bold text-sm" style={{ direction: 'ltr' }}>{offers[currentOffer].title}</span>
+                  <span className="font-bold text-sm" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>{offers[currentOffer].title}</span>
                 </div>
                 <button
                   onClick={() => setIsVisible(false)}
@@ -70,7 +70,7 @@ const StickyNotification = () => {
                 </button>
               </div>
               
-              <p className="text-sm mb-3 opacity-90" style={{ direction: 'ltr' }}>
+              <p className="text-sm mb-3 opacity-90" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                 {offers[currentOffer].message}
               </p>
               

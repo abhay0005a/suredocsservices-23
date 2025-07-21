@@ -116,10 +116,10 @@ const AdvancedInteractions = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6" style={{ direction: 'ltr' }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
             Trusted by 5000+ Customers
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12" style={{ direction: 'ltr' }}>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
             Join thousands of satisfied customers who got their documents hassle-free
           </p>
 
@@ -139,10 +139,10 @@ const AdvancedInteractions = () => {
                     <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform`}>
                       <achievement.icon className={`h-8 w-8 ${achievement.color}`} />
                     </div>
-                    <div className="text-3xl font-bold text-gray-800 mb-2" style={{ direction: 'ltr' }}>
+                    <div className="text-3xl font-bold text-gray-800 mb-2" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                       {achievement.number}
                     </div>
-                    <div className="text-gray-600 font-medium" style={{ direction: 'ltr' }}>
+                    <div className="text-gray-600 font-medium" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                       {achievement.label}
                     </div>
                   </CardContent>
@@ -160,14 +160,14 @@ const AdvancedInteractions = () => {
           className="max-w-4xl mx-auto mb-16"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-gray-800 mb-4" style={{ direction: 'ltr' }}>
+            <h3 className="text-3xl font-bold text-gray-800 mb-4" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
               What Our Customers Say
             </h3>
             <div className="flex justify-center items-center space-x-2 mb-6">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-6 w-6 text-yellow-500 fill-current" />
               ))}
-              <span className="text-lg font-semibold text-gray-700 ml-2" style={{ direction: 'ltr' }}>
+              <span className="text-lg font-semibold text-gray-700 ml-2" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                 4.9/5 from 1000+ reviews
               </span>
             </div>
@@ -189,10 +189,10 @@ const AdvancedInteractions = () => {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
-                        <h4 className="font-bold text-gray-800" style={{ direction: 'ltr' }}>
+                        <h4 className="font-bold text-gray-800" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                           {testimonials[currentTestimonial].name}
                         </h4>
-                        <span className="text-sm text-gray-500" style={{ direction: 'ltr' }}>
+                        <span className="text-sm text-gray-500" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                           • {testimonials[currentTestimonial].location}
                         </span>
                       </div>
@@ -200,11 +200,11 @@ const AdvancedInteractions = () => {
                         {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                           <Star key={i} className="h-4 w-4 text-yellow-500 fill-current" />
                         ))}
-                        <span className="text-sm font-medium text-blue-600" style={{ direction: 'ltr' }}>
+                        <span className="text-sm font-medium text-blue-600" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                           {testimonials[currentTestimonial].service}
                         </span>
                       </div>
-                      <p className="text-gray-700 italic" style={{ direction: 'ltr' }}>
+                      <p className="text-gray-700 italic" style={{ direction: 'ltr', textAlign: 'start', unicodeBidi: 'normal' }}>
                         "{testimonials[currentTestimonial].text}"
                       </p>
                     </div>
@@ -258,11 +258,11 @@ const AdvancedInteractions = () => {
                   <Zap className="h-10 w-10 text-yellow-300" />
                 </motion.div>
 
-                <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ direction: 'ltr' }}>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                   Ready to Get Your Documents?
                 </h3>
                 
-                <p className="text-xl mb-8 opacity-90" style={{ direction: 'ltr' }}>
+                <p className="text-xl mb-8 opacity-90" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                   Join 5000+ satisfied customers. Get started in just 2 minutes!
                 </p>
 
@@ -294,7 +294,7 @@ const AdvancedInteractions = () => {
                   </Button>
                 </div>
 
-                <div className="mt-6 text-sm opacity-75" style={{ direction: 'ltr' }}>
+                <div className="mt-6 text-sm opacity-75" style={{ direction: 'ltr', textAlign: 'center', unicodeBidi: 'normal' }}>
                   💬 Usually responds within 5 minutes
                 </div>
               </div>
