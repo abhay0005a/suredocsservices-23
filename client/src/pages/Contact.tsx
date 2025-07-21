@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Send, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import SEOHead from "@/components/SEOHead";
+import { ScrollToTop } from "@/components/InteractiveElements";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -58,7 +60,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Contact Us - Document Services in Delhi NCR | Quick Response"
+        description="Contact SureDocs for all your document service needs in Delhi NCR. WhatsApp support, quick response, free consultation. Available Mon-Sat for government documents, tax filing, legal services."
+        keywords="contact SureDocs, document services contact Delhi, WhatsApp document support, Delhi NCR document consultants, government document help contact"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto px-4 py-12">
         {/* Header */}
         <motion.div 
@@ -265,7 +273,9 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+      <ScrollToTop />
+      </div>
+    </>
   );
 };
 

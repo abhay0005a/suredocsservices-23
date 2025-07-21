@@ -15,6 +15,8 @@ import {
   Filter
 } from "lucide-react";
 import { motion } from "framer-motion";
+import SEOHead from "@/components/SEOHead";
+import { ScrollToTop } from "@/components/InteractiveElements";
 
 const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -265,7 +267,13 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="Services - Complete Document Solutions in Delhi NCR"
+        description="Professional document services: birth certificates, driving licenses, passports, property mutation, ITR filing, GST registration, business setup. MCD/NDMC specialists with 100% legal process."
+        keywords="birth certificate Delhi, driving license Delhi, passport services Delhi, property mutation Delhi, ITR filing Delhi, GST registration, business registration Delhi, affidavit services, notary Delhi"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto px-4 py-12">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -400,7 +408,9 @@ const Services = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+      <ScrollToTop />
+      </div>
+    </>
   );
 };
 

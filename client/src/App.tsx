@@ -6,6 +6,7 @@ import { Router, Route, Switch } from "wouter";
 import { queryClient } from "@/lib/queryClient";
 import Navigation from "./components/Navigation";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -30,6 +31,7 @@ const App = () => (
           </Switch>
         </Router>
         <WhatsAppFloat />
+        <WhatsAppButton />
       </div>
     </TooltipProvider>
   </QueryClientProvider>

@@ -2,10 +2,18 @@ import { Button } from "@/components/ui/button";
 import { Shield, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import SEOHead from "@/components/SEOHead";
+import { InteractiveStats, ServicePreview, ScrollToTop } from "@/components/InteractiveElements";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <>
+      <SEOHead 
+        title="Home - Professional Document Services"
+        description="Get your documents hassle-free in Delhi NCR. Birth certificates, driving licenses, passports, property mutation, ITR filing & more. 100% legal process."
+        keywords="document services Delhi NCR, birth certificate Delhi, driving license Delhi, passport services Delhi, property mutation Delhi, ITR filing Delhi"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       <main className="container mx-auto px-4 pt-32 pb-20">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -72,7 +80,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+            className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16"
           >
             <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="bg-blue-100 p-4 rounded-full mb-4">
@@ -96,9 +104,31 @@ const Home = () => {
               <p className="text-gray-600 text-center">Professional support throughout the process</p>
             </div>
           </motion.div>
+
+          {/* Interactive Stats Section */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="mb-16"
+          >
+            <InteractiveStats />
+          </motion.div>
+
+          {/* Service Preview Section */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="max-w-2xl mx-auto"
+          >
+            <ServicePreview />
+          </motion.div>
         </motion.div>
       </main>
-    </div>
+      <ScrollToTop />
+      </div>
+    </>
   );
 };
 

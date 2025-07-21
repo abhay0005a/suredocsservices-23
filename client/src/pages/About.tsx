@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Award, Clock, Shield, CheckCircle, Target } from "lucide-react";
 import { motion } from "framer-motion";
+import SEOHead from "@/components/SEOHead";
+import { ScrollToTop } from "@/components/InteractiveElements";
 
 const About = () => {
   const stats = [
@@ -51,7 +53,13 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <>
+      <SEOHead 
+        title="About Us - Professional Document Service Experts in Delhi NCR"
+        description="Meet our expert team specializing in government documents, municipal services, legal documentation, and tax compliance in Delhi NCR. 10+ years experience with MCD/NDMC procedures."
+        keywords="about SureDocs, document service experts Delhi, MCD NDMC specialists, government documentation team Delhi NCR, professional document consultants"
+      />
+      <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto px-4 py-12">
         {/* Hero Section */}
         <motion.div 
@@ -229,7 +237,9 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+      <ScrollToTop />
     </div>
+    </>
   );
 };
 
