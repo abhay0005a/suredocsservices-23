@@ -16,13 +16,13 @@ const AdvancedSEO = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://suredocs.replit.app/"
+          "item": "https://suredocs.netlify.app/"
         }
       ];
 
       pathSegments.forEach((segment, index) => {
         const name = segment.charAt(0).toUpperCase() + segment.slice(1);
-        const url = `https://suredocs.replit.app/${pathSegments.slice(0, index + 1).join('/')}`;
+        const url = `https://suredocs.netlify.app/${pathSegments.slice(0, index + 1).join('/')}`;
         
         breadcrumbItems.push({
           "@type": "ListItem",

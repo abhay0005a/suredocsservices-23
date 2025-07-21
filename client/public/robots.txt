@@ -6,10 +6,10 @@ Disallow: /.git/
 Disallow: /node_modules/
 
 # Preferred version of the site
-Prefer: https://suredocs.replit.app
+Prefer: https://suredocs.netlify.app
 
 # Sitemap location
-Sitemap: https://suredocs.replit.app/sitemap.xml
+Sitemap: https://suredocs.netlify.app/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1
