@@ -31,7 +31,6 @@ const App = () => (
           </Switch>
         </Router>
         <WhatsAppFloat />
-        <WhatsAppButton />
       </div>
     </TooltipProvider>
   </QueryClientProvider>

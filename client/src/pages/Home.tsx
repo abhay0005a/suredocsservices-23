@@ -4,6 +4,10 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import SEOHead from "@/components/SEOHead";
 import { InteractiveStats, ServicePreview, ScrollToTop } from "@/components/InteractiveElements";
+import InteractiveHero from "@/components/InteractiveHero";
+import ParallaxSection from "@/components/ParallaxSection";
+import StickyNotification from "@/components/StickyNotification";
+import InteractiveServiceCards from "@/components/InteractiveServiceCards";
 
 const Home = () => {
   return (
@@ -13,8 +17,17 @@ const Home = () => {
         description="Get your documents hassle-free in Delhi NCR. Birth certificates, driving licenses, passports, property mutation, ITR filing & more. 100% legal process."
         keywords="document services Delhi NCR, birth certificate Delhi, driving license Delhi, passport services Delhi, property mutation Delhi, ITR filing Delhi"
       />
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-      <main className="container mx-auto px-4 pt-32 pb-20">
+      {/* Interactive Hero Section */}
+      <InteractiveHero />
+      
+      {/* Interactive Service Cards */}
+      <InteractiveServiceCards />
+      
+      {/* Parallax Features Section */}
+      <ParallaxSection />
+      
+      <div className="bg-gradient-to-br from-gray-50 to-blue-50">
+      <main className="container mx-auto px-4 py-20">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -127,6 +140,7 @@ const Home = () => {
         </motion.div>
       </main>
       <ScrollToTop />
+      <StickyNotification />
       </div>
     </>
   );
