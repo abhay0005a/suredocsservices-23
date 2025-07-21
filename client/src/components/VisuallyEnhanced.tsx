@@ -252,7 +252,7 @@ const VisuallyEnhanced = () => {
                   onClick={() => window.location.href = '/services'}
                   variant="outline"
                   size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-bold"
+                  className="border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-bold text-[#080000]"
                 >
                   View All Services
                 </Button>
